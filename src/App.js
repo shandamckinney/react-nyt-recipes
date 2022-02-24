@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
 import RecipeDetail from "./Components/RecipeDetail";
 import Navigation from "./Components/Navigation";
+import Footer from "./Components/Footer";
 
 export default function App() {
   const [recipes, setRecipes] = React.useState([]);
@@ -61,6 +62,7 @@ export default function App() {
         />
         <Route path="/:id" element={<RecipeDetail />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import React from "react";
-import uspic from "./../AlexAndShanda.jpg";
+import foodpic from "./../food-img.jpg";
 
 export default function Hero() {
   return (
     <div>
-      <img className="alexandshanda" src={uspic} alt="" />
+      <img className="alexandshanda" src={foodpic} alt="" />
     </div>
   );
 }
