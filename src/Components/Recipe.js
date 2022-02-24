@@ -8,6 +8,7 @@ export default function Recipe(props) {
         <img className="recipe-img" src={props.recipe.thumbnail_url} alt="" />
         <div className="recipe-card-bottom">
           <h2 className="recipe-title">{props.recipe.name}</h2>
+          <p className="recipe-author-small">{props.recipe.credits[0].name}</p>
 
           <div className="tags">
             {props.recipe.tags.some((x) => x.name == "under_30_minutes") && (

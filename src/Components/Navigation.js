@@ -26,12 +26,10 @@ export default function Navigation() {
         <Collapse navbar>
           <Nav className="nav-list" navbar>
             <NavItem>
-              <NavLink href="/components/">My Grocery List</NavLink>
+              <NavLink href="/grocery-list">My Grocery List</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                Saved Recipes
-              </NavLink>
+              <NavLink href="/saved-recipes">Saved Recipes</NavLink>
             </NavItem>
             {/* <UncontrolledDropdown inNavbar nav>
               <DropdownToggle caret nav>

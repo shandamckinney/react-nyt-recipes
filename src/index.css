@@ -49,8 +49,13 @@ a:active {
 }
 .footer {
   background-color: black;
-  height: 8rem;
   color: white;
+  padding: 2rem 12rem;
+}
+
+.about-us {
+  color: white;
+  font-size: 1.25rem;
 }
 
 .left-scroll {
@@ -96,12 +101,48 @@ a:active {
   overflow-y: scroll;
 }
 
+.footer-left {
+  width: 60%;
+  text-align: left;
+}
+
+.footer-left p {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.footer-right {
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.footer-right p {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.footer-right h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .recipe {
   margin: 1rem;
   position: relative;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   width: 13rem;
-  height: 16rem;
+  height: 18rem;
+}
+
+.copywrite {
+  margin-top: 2rem;
+  color: #b3b3b3;
+  font-size: 0.75rem;
+}
+
+.about-us span {
+  color: red;
 }
 
 a:link {
@@ -110,9 +151,18 @@ a:link {
 
 .recipe-title {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 800;
+  text-align: left;
   color: black;
   text-decoration: none;
+  margin-bottom: 0;
+}
+
+.recipe-author-small {
+  font-size: 0.85rem;
+  text-align: left;
+  color: black;
+  font-weight: 400;
 }
 
 .card-tags {
@@ -148,7 +198,7 @@ a:link {
 .recipe-card-bottom {
   padding: 0.5rem;
   position: relative;
-  height: 6rem;
+  height: 8rem;
 }
 
 .no-margin-bottom {

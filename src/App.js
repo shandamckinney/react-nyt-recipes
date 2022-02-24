@@ -6,6 +6,8 @@ import { Route, Routes } from "react-router-dom";
 import RecipeDetail from "./Components/RecipeDetail";
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
+import GroceryList from "./Components/GroceryList";
+import SavedRecipes from "./Components/SavedRecipes";
 
 export default function App() {
   const [recipes, setRecipes] = React.useState([]);
@@ -61,6 +63,8 @@ export default function App() {
           }
         />
         <Route path="/:id" element={<RecipeDetail />} />
+        <Route path="/grocery-list" element={<GroceryList />} />
+        <Route path="/saved-recipes" element={<SavedRecipes />} />
       </Routes>
       <Footer />
     </div>
