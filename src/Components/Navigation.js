@@ -24,7 +24,7 @@ export default function Navigation() {
         </NavbarBrand>
         <NavbarToggler onClick={function noRefCheck() {}} />
         <Collapse navbar>
-          <Nav className="me-auto" navbar>
+          <Nav className="nav-list" navbar>
             <NavItem>
               <NavLink href="/components/">My Grocery List</NavLink>
             </NavItem>

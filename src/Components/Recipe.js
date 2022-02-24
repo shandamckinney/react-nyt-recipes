@@ -5,8 +5,8 @@ export default function Recipe(props) {
   return (
     <Link to={`/${props.recipe.id}`}>
       <div className="recipe">
-        <h2 className="recipe-title">{props.recipe.name}</h2>
         <img className="recipe-img" src={props.recipe.thumbnail_url} alt="" />
+        <h2 className="recipe-title">{props.recipe.name}</h2>
 
         <div className="tags">
           {props.recipe.tags.some((x) => x.name == "under_30_minutes") && (
