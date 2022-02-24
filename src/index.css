@@ -1,13 +1,222 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Source Serif Pro", serif;
+}
+
+h5,
+h6,
+p {
+  font-family: "Mukta", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.alexandshanda {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  object-position: 20% 10%;
+}
+
+.inspiration {
+  margin-top: 2rem;
+}
+
+.recipe-grid {
+  margin: 2.5rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.recipe {
+  padding: 1rem;
+  margin: 1rem;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.recipe-title {
+  font-size: 1.5rem;
+  height: 3rem;
+}
+
+.recipe-rating {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 900;
+  font-size: 1.08em;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.no-recipes {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.recipe-details {
+  margin: 2rem 12rem;
+}
+
+.recipe-header {
+  text-align: left;
+  border-bottom: 1px solid grey;
+  margin-bottom: 1rem;
+}
+
+.recipe-header h1 {
+  font-size: 42px;
+  letter-spacing: 0.02em;
+  line-height: 45px;
+}
+
+.recipe-author {
+  font-size: 1rem;
+  font-family: "Mukta", sans-serif;
+  font-weight: 600;
+}
+
+.recipe-author span {
+  text-decoration: underline;
+}
+
+.recipe-deets {
+}
+
+.recipe-deets h4 {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 900;
+  font-size: 1.08em;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}
+
+.recipe-deets p {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-description {
+  width: 33%;
+  padding: 1rem 1rem 1rem 0rem;
+  text-align: left;
+}
+
+.recipe-thumbnail {
+  width: 66%;
+  padding: 1rem;
+}
+
+.first-look {
+  border-bottom: 2px solid grey;
+}
+
+.tags-reviews {
+  border-bottom: 1px solid grey;
+  padding: 1rem 0rem;
+}
+
+.recipe-tags {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.recipe-tags p {
+  color: #e33d26;
+  padding: 0rem 0.35rem;
+  font-weight: 300;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.recipe-tags span {
+  color: black;
+}
+
+.reviews-ratings {
+  border-left: 1px solid grey;
+  padding-left: 1rem;
+  font-size: 0.875rem;
+}
+
+.recipe-ingredients {
+  width: 40%;
+  text-align: left;
+}
+
+.pic-full-width {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.ingredients {
+  margin-bottom: 0.5rem;
+}
+
+.recipe-body {
+  display: flex;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.recipe-body h4 {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 900;
+  font-size: 1.08em;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-body p {
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding-left: 1rem;
+}
+
+.recipe-prep p {
+  font-size: 1.15rem;
+  line-height: 1.45rem;
+  font-weight: 500;
+}
+.recipe-prep h5 {
+  font-weight: 800;
 }
