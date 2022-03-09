@@ -26,7 +26,7 @@ export default function Body(props) {
         <h1 className="inspiration">Shanda's Suggestions</h1>
         <h3 className="pinell-times">
           Recipes selected throught the week by Shanda Pinell, food editor of
-          The Pinell Times.
+          The Pinell Timesssssss.
         </h3>
         {/* <Filter filterSelected={props.filterRecipes} /> */}
         {props.recipes.length > 0 ? (
