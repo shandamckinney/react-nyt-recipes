@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import Recipe from "./Recipe";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import { Link } from "react-router-dom";
 
 export default function RecipeList() {
   const [recipes, setRecipes] = React.useState([]);
@@ -26,7 +27,7 @@ export default function RecipeList() {
       .then((res) => {
         if (res.data) {
           setRecipes(res.data);
-          console.log(recipes);
+          console.log(res.data);
         }
       })
       .catch((err) => console.log(err));
@@ -102,7 +103,11 @@ export default function RecipeList() {
 
   const recipeElements =
     recipes.length &&
-    recipes.map((rec) => <Recipe recipe={rec} key={rec._id} />);
+    recipes.map((rec) => (
+      <Link to={`/${rec._id}`}>
+        <Recipe recipe={rec} key={rec._id} />
+      </Link>
+    ));
 
   const recipeModal = (
     <div>
@@ -170,6 +175,13 @@ export default function RecipeList() {
           onChange={handleChange}
           name="steps"
           value={form.steps}
+        />
+        <input
+          type="text"
+          placeholder="Image url"
+          onChange={handleChange}
+          name="image"
+          value={form.image}
         />
         <div>
           <input
